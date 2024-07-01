@@ -1,0 +1,44 @@
+3.2.1.17
+'Takeaways' excercise:
+1 -for loop that counts 0 to 10, prints odd numbers.
+SOL:
+
+for i in range(0,11):
+    if i % 2 != 0:
+        print(i)
+
+2 -While loop that counts 0 to 10, prints ood numbers.
+SOL:
+x = 1
+while x < 11:
+    if x % 2 != 0:
+        print(x)
+    x += 1
+
+
+3 -'for' loop with a break 'statement' that iterates over an email address, stops at '@', returns user name.
+SOL:
+
+user = ''
+for letter in "arayaster@gmail.com":
+    if letter != '@':
+        user += user.join(letter)
+        continue
+    break
+print(user)
+
+4 -'for' loop with a 'continue'. Iterates a 'string' of digits. Replaces 0's with x's. Prints modified string.
+SOL:
+
+for d in '03928502135709':
+    if d == '0':
+       sample = sample.replace(d,'x')
+print(sample)
+
+# Apparently, 'prints' does not imply 'save to a variable/object'. Intended solution was:
+for d in '03928502135709':
+  if d == '0':
+    print('x')
+    continue
+  print(d)
+
